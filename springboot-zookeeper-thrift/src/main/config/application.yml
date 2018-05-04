@@ -1,0 +1,15 @@
+server:
+  address: 127.0.0.1
+  port: 8091
+  tomcat:
+    #Tomcat是否开启压缩，默认为关闭
+    compression: on
+    #配置Tomcat编码，默认为UTF-8
+    uri-encoding: UTF-8
+
+zookeeper:
+  serviceName: thrift-service
+  serverList: 127.0.0.1\:2181
+
+thrift:
+  port: 7919

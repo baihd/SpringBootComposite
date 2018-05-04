@@ -1,0 +1,12 @@
+
+server:
+  port: 8004
+
+zookeeper:
+  serviceName: thrift-service
+  serverList: 127.0.0.1\:2181
+
+thrift:
+  port: 7919
+  timeout: 1000000
+

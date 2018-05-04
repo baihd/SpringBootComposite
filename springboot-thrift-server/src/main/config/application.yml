@@ -1,0 +1,11 @@
+server:
+  address: 127.0.0.1
+  port: 8092
+  tomcat:
+    #Tomcat是否开启压缩，默认为关闭
+    compression: on
+    #配置Tomcat编码，默认为UTF-8
+    uri-encoding: UTF-8
+
+thrift:
+  port: 7919

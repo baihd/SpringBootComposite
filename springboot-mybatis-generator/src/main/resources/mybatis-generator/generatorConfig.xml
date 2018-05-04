@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <properties resource="generator.properties"/>
+    <context id="MySQLTables" targetRuntime="MyBatis3" defaultModelType="flat">
+        <!-- 自动识别数据库关键字，默认false，如果设置为true，根据SqlReservedWords中定义的关键字列表；
+       一般保留默认值，遇到数据库关键字（Java关键字），使用columnOverride覆盖-->
+        <property name="autoDelimitKeywords" value="false"/>
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 格式化java代码 -->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+        <!-- 格式化XML代码 -->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+
+        <!-- beginningDelimiter和endingDelimiter：指明数据库的用于标记数据库对象名的符号，ORACLE是双引号，MYSQL是`反引号； -->
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <commentGenerator>
+            <!-- 是否生成注释代时间戳true：是，false:否 -->
+            <property name="suppressDate" value="true"/>
+            <!-- 是否取消注释true：是，false:否 -->
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+
+        <!--数据库URL，用户名、密码 -->
+        <jdbcConnection driverClass="${jdbc_driver}" connectionURL="${jdbc_url}"
+                        userId="${jdbc_user}" password="${jdbc_password}">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <!-- 是否使用bigDecimal， false可自动转化以下类型（Long, Integer, Short, etc.） -->
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 生成实体的包名和位置-->
+        <javaModelGenerator targetPackage="com.composite.domain" targetProject="${project}">
+            <!--自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter；-->
+            <property name="constructorBased" value="false"/>
+            <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
+            <property name="enableSubPackages" value="true"/>
+            <!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="com.composite.mapper" targetProject="${project}">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成dao的包名和位置-->
+        <javaClientGenerator targetPackage="com.composite.dao" targetProject="${project}" type="XMLMAPPER">
+            <!-- 是否在当前路径下新加一层schema,eg：fase路径com.composite.dao"， true:com.composite.dao".[schemaName] -->
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <table tableName="%" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+        </table>
+
+        <!-- 要生成的表tableName是数据库中的表名或视图名 domainObjectName是实体类名
+            可以使用SQL通配符匹配多个表。生成所有的表可以这样设置 tableName="%"-->
+        <table tableName="user_table" domainObjectName="UserTable"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>
+
+    </context>
+</generatorConfiguration>
