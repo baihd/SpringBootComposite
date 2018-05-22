@@ -17,6 +17,7 @@
         <module>springboot-thrift-server</module>
         <module>springboot-thrift-interface</module>
         <module>springboot-zookeeper-thrift</module>
+        <module>springboot-mybatis-generator</module>
     </modules>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->

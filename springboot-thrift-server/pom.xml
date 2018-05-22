@@ -93,7 +93,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.composite.build.SpringbootThriftServerApplication</mainClass>
+                    <mainClass>com.composite.build.ThriftServerApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

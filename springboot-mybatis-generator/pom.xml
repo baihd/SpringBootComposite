@@ -81,7 +81,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<fork>true</fork>
-					<mainClass>com.composite.build.SpringbootMybatisGeneratorApplication</mainClass>
+					<mainClass>com.composite.build.MybatisGeneratorApplication</mainClass>
 					<layout>ZIP</layout>
 				</configuration>
 				<executions>

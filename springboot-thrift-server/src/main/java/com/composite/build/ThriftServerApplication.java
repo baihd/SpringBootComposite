@@ -6,9 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.composite")
-public class SpringbootThriftServerApplication {
+public class ThriftServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootThriftServerApplication.class, args);
+		SpringApplication.run(ThriftServerApplication.class, args);
 	}
 }

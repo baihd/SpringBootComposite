@@ -1,4 +1,4 @@
-package com.composite.Utils;
+package com.composite.utils;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.api.ProgressCallback;

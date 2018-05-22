@@ -1,6 +1,6 @@
 
 server:
-  port: 8004
+  port: 8093
 
 zookeeper:
   serviceName: thrift-service

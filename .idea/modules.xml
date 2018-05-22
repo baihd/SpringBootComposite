@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-generator/springboot-mybatis-generator.iml" filepath="$PROJECT_DIR$/springboot-mybatis-generator/springboot-mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-generator/springboot-mybatis-generator.iml" filepath="$PROJECT_DIR$/springboot-mybatis-generator/springboot-mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thrift-client/springboot-thrift-client.iml" filepath="$PROJECT_DIR$/springboot-thrift-client/springboot-thrift-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-thrift-client/springboot-thrift-client.iml" filepath="$PROJECT_DIR$/springboot-thrift-client/springboot-thrift-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-thrift-interface/springboot-thrift-interface.iml" filepath="$PROJECT_DIR$/springboot-thrift-interface/springboot-thrift-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thrift-interface/springboot-thrift-interface.iml" filepath="$PROJECT_DIR$/springboot-thrift-interface/springboot-thrift-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-thrift-server/springboot-thrift-server.iml" filepath="$PROJECT_DIR$/springboot-thrift-server/springboot-thrift-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thrift-server/springboot-thrift-server.iml" filepath="$PROJECT_DIR$/springboot-thrift-server/springboot-thrift-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-zookeeper-thrift/springboot-zookeeper-thrift.iml" filepath="$PROJECT_DIR$/springboot-zookeeper-thrift/springboot-zookeeper-thrift.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-zookeeper-thrift/springboot-zookeeper-thrift.iml" filepath="$PROJECT_DIR$/springboot-zookeeper-thrift/springboot-zookeeper-thrift.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootcomposite.iml" filepath="$PROJECT_DIR$/springbootcomposite.iml" />
     </modules>
